@@ -70,8 +70,10 @@ public class Main {
         List<StudentGroup> studentGroupList2 = new ArrayList<>(List.of(new StudentGroup(studentList2, teacher2)));
         // System.out.println("StudentGroup №2: " + studentGroupList2);
 
-        List<Stream> streamList1 = new ArrayList<>(List.of(new Stream[]{(Stream) studentGroupList1, (Stream) studentGroupList2}));
-        System.out.println(streamList1);
+        List<Stream> stream1 = new ArrayList<>();
+        stream1.add(new Stream(studentGroupList1));
+        stream1.add(new Stream(studentGroupList2));
+        System.out.println("Stream №1: " + stream1);
 
 
 

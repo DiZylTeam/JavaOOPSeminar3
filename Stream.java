@@ -12,6 +12,21 @@ public class Stream implements Iterable<StudentGroup> {
         this.studentGroups = studentGroups;
     }
 
+    public List<StudentGroup> getStudentGroups() {
+        return studentGroups;
+    }
+
+    @Override
+    public String toString() {
+        return "Stream {" +
+                "studentGroups =" + studentGroups +
+                '}';
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
     @Override
     public Iterator<StudentGroup> iterator() {
         return new Iterator<StudentGroup>() {
